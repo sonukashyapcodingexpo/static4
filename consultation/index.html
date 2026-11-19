@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Consultation | Saanvi Laboratories</title>
+<meta name="description" content="Request a free consultation with Saanvi Laboratories. The form asks for practice details only and does not accept patient information.">
+<meta name="theme-color" content="#1e3a8a">
+<link rel="canonical" href="https://TODO-domain.example/consultation/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Consultation | Saanvi Laboratories">
+<meta property="og:description" content="Request a free consultation with Saanvi Laboratories. The form asks for practice details only and does not accept patient information.">
+<meta property="og:url" content="https://TODO-domain.example/consultation/">
+<meta property="og:image" content="https://TODO-domain.example/assets/images/tablet.jpg">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<script defer src="/assets/js/main.js"></script>
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/" aria-label="Saanvi Laboratories home"><span class="brand-mark" aria-hidden="true">SL</span><span><strong>Saanvi</strong><small>Laboratories</small></span></a>
+    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+      <a href="/">Home</a>
+      <div class="nav-group"><button class="nav-toggle" type="button" aria-expanded="false">About Us <span aria-hidden="true"></span></button><div class="dropdown"><a href="/about">About Saanvi</a><a href="/about/vision-and-mission">Vision and Mission</a><a href="/about/core-values">Core Values</a><a href="/about/infrastructure">Infrastructure</a></div></div>
+      <div class="nav-group"><button class="nav-toggle" type="button" aria-expanded="false">Services <span aria-hidden="true"></span></button><div class="dropdown"><a href="/services">All Services</a><a href="/services/medical-billing">Medical Billing</a><a href="/services/medical-transcription">Medical Transcription</a><a href="/services/medical-coding">Medical Coding</a><a href="/services/compliance-audits">Compliance Audits</a><a href="/services/practice-consulting">Practice Consulting</a><a href="/services/credentialing">Credentialing</a></div></div>
+      <a href="/specialties">Specialties</a>
+      <div class="nav-group"><button class="nav-toggle" type="button" aria-expanded="false">Why Saanvi <span aria-hidden="true"></span></button><div class="dropdown"><a href="/why-saanvi/why-outsource">Why Outsource</a><a href="/why-saanvi/our-commitment">Our Commitment</a></div></div>
+      <div class="nav-group"><button class="nav-toggle" type="button" aria-expanded="false">Resources <span aria-hidden="true"></span></button><div class="dropdown"><a href="/faqs">FAQs</a></div></div>
+    </nav>
+    <a class="button header-cta" href="/consultation">Free Consultation</a>
+    <button class="menu-button" type="button" aria-label="Open navigation" aria-controls="primary-nav" aria-expanded="false">☰</button>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero">
+  <img class="page-hero-img" src="/assets/images/workshop.jpg" alt="A team workshop with notes on a wall" width="1600" height="1067" fetchpriority="high">
+  <div class="page-hero-veil" aria-hidden="true"></div>
+  <div class="container page-hero-inner">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Free Consultation</span></nav>
+    <p class="eyebrow">Free consultation</p>
+    <h1>Request a consultation.</h1>
+    <p class="lead">Tell us your name, the practice, and the work you want to discuss. Leave charts and patient identifiers off this form.</p>
+    
+  </div>
+</section>
+  <section class="section">
+    <div class="container form-layout">
+      <div class="prose">
+        <p class="eyebrow">What the conversation is</p>
+        <h2>Three things we can cover.</h2>
+        <ul class="checklist">
+          <li>How the relevant workflow runs today.</li>
+          <li>Which tasks you might want supported, and which must stay in the practice.</li>
+          <li>What information would be needed before any work is agreed.</li>
+        </ul>
+        <p class="body-copy">Submitting this form does not book a time and does not send the enquiry. The static page will say so until an approved endpoint is connected. The thank-you page is reserved for a confirmed submission later.</p>
+        <p class="notice">Do not include patient records, claim numbers tied to a person, or other protected health information.</p>
+      </div>
+      <form id="consult-form" class="enquiry-form" data-enquiry-form action="" method="post" novalidate>
+        <noscript><p class="notice">JavaScript is required to validate this form. It cannot send an enquiry until an approved service is connected.</p></noscript>
+        <label>Name <span class="req">*</span><input id="consult-name" name="name" required autocomplete="name"></label>
+        <label>Practice name<input id="consult-practice" name="practice" autocomplete="organization"></label>
+        <label>Specialty<input id="consult-specialty" name="specialty"></label>
+        <label>Phone <span class="req">*</span><input id="consult-phone" name="phone" type="tel" required autocomplete="tel"></label>
+        <label>Email <span class="req">*</span><input id="consult-email" name="email" type="email" required autocomplete="email"></label>
+        <label>Services interested in
+          <select id="consult-services" name="services"><option value="">Select a service</option><option>Medical Billing</option><option>Medical Transcription</option><option>Medical Coding</option><option>Compliance Audits</option><option>Practice Consulting</option><option>Credentialing</option><option>Not sure yet</option></select>
+        </label>
+        
+<label class="wide">Message
+  <textarea id="consult-message" name="message" rows="5" placeholder="Describe the practice need. Do not include patient information."></textarea>
+</label>
+<label class="consent"><input id="consult-consent" name="consent" type="checkbox" required><span>I understand this is a general enquiry and I will not submit patient records or protected health information. <span class="req">*</span></span></label>
+<button class="button button-pine" type="submit">Send enquiry</button>
+<p class="form-status" role="status" aria-live="polite"></p>
+<p class="privacy-note">The form is not connected to a submission service yet. Read the <a href="/privacy-policy">Privacy Policy</a>.</p>
+      </form>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="/" aria-label="Saanvi Laboratories home"><span class="brand-mark" aria-hidden="true">SL</span><span><strong>Saanvi</strong><small>Laboratories</small></span></a>
+      <p>Healthcare revenue cycle support, agreed around the way your practice already works.</p>
+      </div>
+    <div>
+      <h2>Services</h2>
+      <ul><li><a href="/services/medical-billing">Medical Billing</a></li><li><a href="/services/medical-transcription">Medical Transcription</a></li><li><a href="/services/medical-coding">Medical Coding</a></li><li><a href="/services/compliance-audits">Compliance Audits</a></li><li><a href="/services/practice-consulting">Practice Consulting</a></li><li><a href="/services/credentialing">Credentialing</a></li></ul>
+    </div>
+    <div>
+      <h2>Explore</h2>
+      <ul>
+        <li><a href="/specialties">Specialties</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/about/vision-and-mission">Vision and Mission</a></li>
+        <li><a href="/about/core-values">Core Values</a></li>
+        <li><a href="/about/infrastructure">Infrastructure</a></li>
+        <li><a href="/why-saanvi/why-outsource">Why Outsource</a></li>
+        <li><a href="/why-saanvi/our-commitment">Our Commitment</a></li>
+        <li><a href="/faqs">FAQs</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Get in touch</h2>
+      <ul>
+        <li><a href="/consultation">Free Consultation</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/privacy-policy">Privacy Policy</a></li>
+        <li><a href="/terms">Terms and Conditions</a></li>
+        <li><span>Hyderabad, India</span></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span data-year></span> Saanvi Laboratories</span>
+    <span>Hyderabad, India</span>
+  </div>
+</footer>
+<div class="mobile-actions">
+  <a href="/contact">Contact</a>
+  <a href="/consultation">Free Consultation</a>
+</div>
+</body>
+</html>
