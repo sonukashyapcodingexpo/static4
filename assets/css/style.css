@@ -89,36 +89,8 @@ p { margin: 0 0 14px; }
   justify-content: space-between;
   gap: 18px;
 }
-.brand { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
-.brand-mark {
-  width: 42px;
-  height: 42px;
-  display: grid;
-  place-items: center;
-  border-radius: 12px;
-  background: var(--accent);
-  color: white;
-  font-family: var(--display);
-  font-weight: 600;
-  font-size: 18px;
-}
-.brand strong {
-  display: block;
-  font-family: var(--display);
-  font-size: 22px;
-  font-weight: 560;
-  letter-spacing: -0.03em;
-  line-height: 1;
-}
-.brand small {
-  display: block;
-  margin-top: 2px;
-  color: var(--muted);
-  font-size: 11px;
-  font-weight: 650;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
+.brand { display: flex; align-items: center; flex-shrink: 0; }
+.brand img { height: 46px; width: auto; }
 
 .primary-nav { display: flex; align-items: center; gap: 2px; }
 .primary-nav > a,
@@ -660,8 +632,13 @@ details p { margin: 0; padding: 0 28px 16px 0; color: var(--body); }
   padding: 56px 0 28px;
 }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 28px; }
-.footer .brand strong { color: white; }
-.footer .brand small { color: #a8a29e; }
+.footer .brand {
+  width: fit-content;
+  padding: 6px 10px;
+  background: #fff;
+  border-radius: 8px;
+}
+.footer .brand img { height: 42px; }
 .footer h2 {
   margin: 0 0 14px;
   color: #c7d2fe;
@@ -750,6 +727,7 @@ details p { margin: 0; padding: 0 28px 16px 0; color: var(--body); }
 
 @media (max-width: 720px) {
   .container { width: min(100% - 32px, 680px); }
+  .brand img, .footer .brand img { height: 40px; }
   .hero { padding-top: 16px; }
   .hero-copy h1, .page-hero h1 { font-size: 36px; }
   .hero-media img, .why-band img, .frame img { height: 260px; border-radius: 20px; }
@@ -795,8 +773,6 @@ h2 { font-size: clamp(26px, 2.4vw, 32px); }
 .eyebrow { color: #57534e; font-size: 13px; font-weight: 600; letter-spacing: 0; text-transform: none; }
 .button, .button-ghost, .button-pine, .header-cta, .mobile-actions a { border-radius: 4px; }
 .button:hover, .button-pine:hover { transform: none; }
-.brand-mark { border-radius: 2px; width: 36px; height: 36px; font-family: var(--sans); font-size: 14px; font-weight: 700; }
-.brand strong { font-family: var(--sans); font-size: 18px; font-weight: 700; letter-spacing: 0; }
 .primary-nav > a, .nav-toggle { border-radius: 4px; font-weight: 600; }
 .hero { background: #fff; padding: 36px 0 12px; }
 .hero-copy h1 { max-width: 16em; }
